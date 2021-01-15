@@ -1,0 +1,57 @@
+.TodoList{
+    display :flex;
+    flex-wrap: wrap;
+    width : 80%;
+    justify-content : center;
+    margin : auto;
+}
+.TodoList .TodoItems{
+    display : flex;
+    width : 400px;
+    flex-direction: column;
+    margin : auto;
+}
+
+.TodoList .BucketCard{
+    border : 1px solid black;
+    margin : 10px;
+    padding : 10px;
+    border-radius : 8px;
+    box-shadow : 0 0 5px grey;
+}
+
+.TodoList .BucketName{
+    font-size : 25px;
+    font-weight : 700;
+    flex : 0.3
+}
+
+.TodoList .BucketAndIcon{
+    display : flex;
+    align-items : center;
+}
+
+.TodoList .BucketAndIcon img{
+    flex : 0.3;
+    display : inline-block;
+    width : 30px;
+    height : 30px;
+    margin-right : 10px;
+}
+
+.TodoList .DeleteBucket{
+    flex : 2;
+    
+    display : flex;
+}
+
+.TodoList .DeleteBucketButton{
+    padding : 4px;
+    background-color : rgb(228, 37, 37);
+    color : white;
+    border : none;
+    font-size : 18px;
+    margin-left  : auto;
+    border-radius : 4px;
+    cursor : pointer;
+}

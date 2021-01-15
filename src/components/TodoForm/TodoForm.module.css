@@ -1,0 +1,57 @@
+.TodoForm{
+    margin : auto;
+    
+    display : flex;
+    width : 400px;
+    margin-top : 20px;
+}
+
+.TodoForm form{
+    
+    width : 100%;
+}
+.TodoForm .InputButton{
+    display : flex;
+    justify-content : space-evenly;
+}
+
+.TodoForm option{ 
+    font-size : 16px;
+
+}
+.TodoForm .Dropdown{
+    margin-top : 8px;
+}
+.TodoForm datalist{
+    margin-top : 5px;
+    font-size : 20px;
+    border-radius : 0;
+    border: none;
+    box-shadow : 0px 2px 5px grey;
+    width : 80px;
+    height : 30px;
+}
+
+.TodoForm input{
+    flex : 2;
+    font-size : 20px;
+    padding : 5px;
+    border : 1px solid black;
+}
+
+.TodoForm .Submit{
+    transition : background-color 0.25s linear;
+    flex : 0.5;
+    padding : 4px;
+    font-size : 18px;
+    color : green;
+    background-color: green;
+    color : white;
+    
+}
+
+.TodoForm .Submit:hover{
+    background-color :white;
+    border : 1px solid green;
+    color : green;
+}

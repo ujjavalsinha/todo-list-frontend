@@ -1,0 +1,21 @@
+.EditForm{
+    position : absolute;
+    background-color : white;
+    z-index : 1000;
+    height : 150px;
+    width : 500px;
+    left : 400px;
+    top : 100px;
+    animation : transitionUp 0.2s linear;
+    border-radius : 8px;
+    padding : 20px;
+}
+
+@keyframes transitionUp{
+    from {
+        transform : translateY(-100%);
+    }
+    to{
+        transform : translateY(0)
+    }
+}

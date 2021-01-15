@@ -1,0 +1,84 @@
+.TodoItem{
+    position : relative;
+    border-radius :  6px;
+    box-shadow : 0 0 2px grey;
+    border : 1px solid grey;
+    margin : 5px 0px;
+    display : flex;
+    transition : all 0.3s linear;
+    align-items : center;
+    
+}
+.TodoItem p{
+    flex : 2;
+    margin-left : 14px;
+    
+}
+
+.TodoItem .Tick{
+    flex : 0.5;
+    box-sizing : border-box;
+    /* margin-top : 10px; */
+    margin-left : 5px;
+    width : 30px;
+    height : 30px;
+    border-radius : 50%;
+    transition : background-color 0.3s linear;
+    cursor : pointer;
+}
+.TodoItem .TickDiv{
+    box-sizing : border-box;
+    padding-right : 10px;
+}
+.TodoItem .Tick:hover{
+    height : 32px;
+    width : 32px;
+    background : #7FFF00;
+}
+.TodoItem .DeleteIcon{
+    transition : background-color 0.3s linear;
+    border : none;
+    height : 25px;
+    width : 25px;
+    margin-right : 3px;
+    padding : 5px;
+    border-radius :50%;
+    cursor: pointer;
+}
+.TodoItem .Delete{
+    
+    flex : 0.6;
+    display : flex;
+    justify-content : space-between;
+    text-align : center;
+    
+}
+
+.TodoItem .DeleteIcon:hover{
+    color : white;
+    background-color : rgb(240, 85, 85);
+}
+
+.TodoItem .EditIcon {
+    height : 25px;
+    width : 25px;
+    /* margin-top : 4px; */
+    border-radius : 5px;
+    padding : 5px;
+}
+
+.TodoItem .EditIcon:hover{
+    background-color : rgb(63, 188, 238);
+}
+/* .TodoItem .Add{
+    border : none;
+    background-color : white;
+    color : green;
+    font-size : 18px;
+}
+
+.TodoItem .Add:hover{
+    background-color : green;
+    color : white;
+    border : 1px solid green;
+} */

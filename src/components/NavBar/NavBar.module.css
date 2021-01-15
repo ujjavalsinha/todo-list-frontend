@@ -1,0 +1,42 @@
+.NavBar{
+    display : flex;
+    margin : auto;
+    justify-content: space-evenly;
+}
+.Logo{
+    flex : 2;
+   
+    position : relative
+}
+
+.Logo .LogoText{
+    display : inline-block;
+    position : absolute;
+    margin-left : 80px;
+    
+}
+.NavItems{
+    flex : 1;
+    display : flex;
+    justify-content : space-evenly;
+    list-style: none;
+}
+
+.NavItems li a{
+    padding : 5px;
+    transition : background-color 0.3s linear;
+    border : 1px solid black;
+    border-radius : 5px;
+    cursor : pointer;
+}
+.NavItems li a:hover{
+    
+   background-color : #070606;
+   color : white;
+}
+
+.NavItems li a{
+    text-decoration: none;
+    color :black;
+}
+
