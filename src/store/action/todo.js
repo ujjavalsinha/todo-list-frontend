@@ -2,7 +2,7 @@ import * as actionTypes from './actionTypes'
 import axios from 'axios'
 export const addItem = (items,username) => {
     return dispatch => {
-        axios.post(`https://todolist-backend-django.herokuapp.com/api/todolist/${username}`,items)
+        axios.post(`https://todolist-backend-django.vercel.app/api/todolist/${username}`,items)
         .then(response => {
             
             dispatch(setTodoItems(response.data))
@@ -22,7 +22,7 @@ export const statusChanged = (item) => {
 }
 export const completeTask = (item_id,username) => {
     return dispatch => {
-        axios.get(`https://todolist-backend-django.herokuapp.com/api/todolist/${username}/${item_id}/complete`)
+        axios.get(`https://todolist-backend-django.vercel.app/api/todolist/${username}/${item_id}/complete`)
         .then(response => {
             
             const item = response.data
@@ -35,7 +35,7 @@ export const completeTask = (item_id,username) => {
 }
 export const removeItem = (item_id,username) => {
     return dispatch => {
-        axios.get(`https://todolist-backend-django.herokuapp.com/api/todolist/${username}/${item_id}/delete`)
+        axios.get(`https://todolist-backend-django.vercel.app/api/todolist/${username}/${item_id}/delete`)
         .then(response => {
             
             dispatch(setTodoItems(response.data))
@@ -62,7 +62,7 @@ export const setTodoItems = (items) => {
 
 export const fetchTodoItems = (username) => {
     return dispatch => {
-        axios.get(`https://todolist-backend-django.herokuapp.com/api/todolist/${username}`)
+        axios.get(`https://todolist-backend-django.vercel.app/api/todolist/${username}`)
         .then(response => {
             
             dispatch(setTodoItems(response.data))
@@ -81,7 +81,7 @@ export const editing = (item_id) => {
 }
 export const updatingItem = (item,id,username) => {
     return dispatch => {
-        axios.post(`https://todolist-backend-django.herokuapp.com/api/todolist/${username}/${id}`,item)
+        axios.post(`https://todolist-backend-django.vercel.app/api/todolist/${username}/${id}`,item)
         .then(response => {
             
             dispatch(setTodoItems(response.data))
