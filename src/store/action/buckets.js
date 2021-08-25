@@ -3,7 +3,7 @@ import axios from 'axios'
 
 export const addBucket = (name,username) => {
     return dispatch => {
-        axios.post(`https://todo-list-frontend-one.vercel.app/api/buckets/${username}`,name)
+        axios.post(`https://todolist-backend-django.vercel.app/api/buckets/${username}`,name)
         .then(response => {
             
             dispatch(setBuckets(response.data))
@@ -23,7 +23,7 @@ export const setBuckets = (buckets) => {
 
 export const fetchBuckets = (username) => {
     return dispatch => {
-        axios.get(`https://todo-list-frontend-one.vercel.app/api/buckets/${username}`)
+        axios.get(`https://todolist-backend-django.vercel.app/api/buckets/${username}`)
         .then(response => {
             
             dispatch(setBuckets(response.data))
@@ -36,7 +36,7 @@ export const fetchBuckets = (username) => {
 
 export const deleteBucket = (bucket_id,username) => {
     return dispatch => {
-        axios.get(`https://todo-list-frontend-one.vercel.app/api/buckets/${username}/${bucket_id}/delete`)
+        axios.get(`https://todolist-backend-django.vercel.app/api/buckets/${username}/${bucket_id}/delete`)
         .then(response => {
             
             dispatch(setBuckets(response.data))
