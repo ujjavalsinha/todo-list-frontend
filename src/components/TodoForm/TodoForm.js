@@ -30,7 +30,7 @@ class TodoForm extends Component{
         // this.props.onFetchingBuckets()
         if(this.props.editing){
             
-            axios.get(`https://todolist-backend-django.herokuapp.com/api/todolist/${this.props.username}/${this.props.editing_id}`)
+            axios.get(`https://todo-list-frontend-one.vercel.app/api/todolist/${this.props.username}/${this.props.editing_id}`)
             .then(response => {
                 let fetched_bucket_name; 
                 for(let i=0;i<=this.props.buckets.length-1;i++){
