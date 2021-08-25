@@ -32,7 +32,7 @@ export const authSignUp = (userData, history) => {
     return dispatch => {
         dispatch(authStart())
         // axios.post('http://127.0.0.1:8000/api/users/signup',userData)
-        axios.post('https://todolist-backend-django.herokuapp.com/api/users/signup',userData)
+        axios.post('https://todolist-backend-django.vercel.app.com/api/users/signup',userData)
         .then(response => {
             console.log(response.data)
             dispatch(authSuccess(response.data.tokenId,response.data.username ))
@@ -49,7 +49,7 @@ export const authSignIn = (userLoginData,history) => {
     return dispatch => {
         dispatch(authStart())
         // axios.post('http://127.0.0.1:8000/api/users/login',userLoginData)
-        axios.post('https://todolist-backend-django.herokuapp.com/api/users/login',userLoginData)
+        axios.post('https://todolist-backend-django.vercel.app/api/users/login',userLoginData)
         .then(response => {
             console.log(response.data)
             dispatch(authSuccess(response.data.tokenId,response.data.username))
